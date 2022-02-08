@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styles/locomotive-scroll.css">
+
+    <link rel="stylesheet" href="styles/styles.css">
+    
+    <title>locomotive-scroll Template</title>
+</head>
+<body>
+    <!-- Sticky navbar -->
+    <nav>
+        <h1>Locomotive scroll Template</h1>
+    </nav>
+
+    <main data-scroll-container>
+
+        <!-- MODIFY -->
+            <section style="height: 100vh">
+                <h1 data-scroll data-scroll-speed="0">Some title</h1>
+                <p data-scroll data-scroll-speed="3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto dolor sed recusandae porro ipsam placeat, blanditiis nihil commodi necessitatibus laudantium error minus qui asperiores quasi perferendis, pariatur dicta impedit.
+                </p>
+            </section>
+
+            <section>
+                <h1 data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">Some title</h1>
+                <p data-scroll data-scroll-direction="horizontal" data-scroll-speed="3">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto dolor sed recusandae porro ipsam placeat, blanditiis nihil commodi necessitatibus laudantium error minus qui asperiores quasi perferendis, pariatur dicta impedit.
+                </p>
+            </section>
+
+            <section style="height: 100vh">
+                <h1>Some title</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto dolor sed recusandae porro ipsam placeat, blanditiis nihil commodi necessitatibus laudantium error minus qui asperiores quasi perferendis, pariatur dicta impedit.
+                </p>
+            </section>
+
+            <section style="height: 100vh">
+                <h1>Some title</h1>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto dolor sed recusandae porro ipsam placeat, blanditiis nihil commodi necessitatibus laudantium error minus qui asperiores quasi perferendis, pariatur dicta impedit.
+                </p>
+            </section>
+        <!-- MODIFY -->
+
+    </main>
+</body>
+<script src="javascript/locomotive-scroll.min.js"></script>
+<script>
+    const scroll = new LocomotiveScroll({
+        el: document.querySelector('[data-scroll-container]'),
+        smooth: true,
+    })
+</script>
+</html>
